@@ -44,6 +44,17 @@ body {
   font-size: 17px;
 }
 
+.container {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}  
+  
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
@@ -60,8 +71,10 @@ body {
 </style>
 </head>
 <body>
-<img src="images/hmly.jpg" alt="Himalayan Medical" style="width:1200px;height:400px;">
-
+  
+<div class="container">
+<img src="images/hmly.jpg" alt="Himalayan Medical" style="width:1200px;height:400px;" />
+</div>
 <div class="topnav">
   <a class="active" href="#home">查询服务</a>
   <a href="#about">关于我们</a>
